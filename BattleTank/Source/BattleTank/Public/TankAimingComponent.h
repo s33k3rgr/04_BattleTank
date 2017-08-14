@@ -28,7 +28,10 @@ public:
 
 	void AimAt(FVector WorldSpaceAim, float LaunchSpeed);
 
+
 private:
 	UStaticMeshComponent* Barrel = nullptr;
+
+	void MoveBarrelTowards(FVector AimDirection);
 	
 };
